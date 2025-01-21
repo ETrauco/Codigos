@@ -1,6 +1,6 @@
 print("\n ==== Bienvenido al convertor de divisas ==== \n")
 
-def usd_to_clp():
+def usd_to_clp(): # Función que convierte de USD a CLP
     print("Conversión de USD a CLP")
     cant_usd = float(input("Ingrese la cantidad de USD: "))
     valor_clp = float(input("Ingrese el valor del dolar en CLP: \n"))
@@ -9,7 +9,7 @@ def usd_to_clp():
     return clp
 
 
-def clp_to_usd(): 
+def clp_to_usd(): # Función que convierte de CLP a USD
     print("Conversión de CLP a USD")
     cant_clp = float(input("Ingrese la cantidad de CLP: "))
     valor_usd = float(input("Ingrese el valor del dolar en CLP: \n"))
@@ -17,7 +17,7 @@ def clp_to_usd():
     print(f"{cant_clp} CLP equivalen a {usd:.2f} USD \n")
     return usd
 
-def main():
+def main(): #función principal
     while True:
         opcion = int(input("Ingrese la opción que desea realizar: \n 1. USD a CLP \n 2. CLP a USD \n 3. Salir \n"))
         if opcion == 1:
